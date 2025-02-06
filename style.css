@@ -24,11 +24,11 @@
   padding: 10px 20px;
   cursor: pointer;
   background-color: #fff;
-  border-top-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-radius: 25px 0 25px 0;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: transform 0.3s ease-in-out;
 }
 
 .uni-carousel-item img {
@@ -38,10 +38,7 @@
 }
 
 .uni-carousel-item:hover {
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-radius: 0 25px 0 25px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   border-top: 1px solid red;
   border-right: 1px solid red;
@@ -90,12 +87,16 @@
     rgba(239, 12, 12, 1) 0%,
     rgba(170, 0, 0, 1) 65%
   );
-  border-top-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-radius: 25px 0 25px 0;
   text-decoration: none;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.uniqueCardBtn-Section .uniqueCardBtn-container .uniqueCardBtn img {
+  max-width: 50px;
 }
 
 .uniqueCardBtn-Section .uniqueCardBtn-container .uniqueCardBtn p {
@@ -107,9 +108,7 @@
 }
 
 .uniqueCardBtn-Section .uniqueCardBtn-container .uniqueCardBtn:hover {
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-radius: 0 25px 0 25px;
   transform: scale(1.05);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
