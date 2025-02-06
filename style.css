@@ -61,3 +61,55 @@
     width: 100px;
   }
 }
+
+.uniqueCardBtn-Section {
+  margin: 5px 5%;
+  padding: 10px;
+}
+
+.uniqueCardBtn-Section .uniqueCardBtn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.uniqueCardBtn-Section .uniqueCardBtn-container .uniqueCardBtn {
+  width: 200px;
+  height: 120px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgb(239, 12, 12);
+  background: radial-gradient(
+    circle,
+    rgba(239, 12, 12, 1) 0%,
+    rgba(170, 0, 0, 1) 65%
+  );
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  text-decoration: none;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.uniqueCardBtn-Section .uniqueCardBtn-container .uniqueCardBtn p {
+  font-size: 20px;
+  margin: 0;
+  margin-top: 5px;
+  color: #fff;
+  text-align: center;
+}
+
+.uniqueCardBtn-Section .uniqueCardBtn-container .uniqueCardBtn:hover {
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transform: scale(1.05);
+}
